@@ -5,8 +5,20 @@
     "gameId": "solitario",
     "titolo": "Solitario Klondike",
     "descrizione": "Il classico Solitario con carte: ordina i semi dall'Asso al Re. Funziona anche offline dopo il primo caricamento.",
-    "tags": ["carte", "classico", "single", "no-account", "mobile", "italiano", "5-min", "15-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "carte",
+      "classico",
+      "single",
+      "no-account",
+      "mobile",
+      "italiano",
+      "5-min",
+      "15-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 10,
     "cover": "/covers/solitario.png",
     "rottaInterna": "/giochi/solitario"
@@ -17,8 +29,19 @@
     "gameId": "tris",
     "titolo": "Tris 2 giocatori",
     "descrizione": "Crea una stanza con codice a 6 caratteri e sfida un amico senza account. X contro O, vince chi fa tris.",
-    "tags": ["2-giocatori", "multiplayer", "codice-stanza", "no-account", "mobile", "italiano", "5-min"],
-    "players": { "min": 2, "max": 2 },
+    "tags": [
+      "2-giocatori",
+      "multiplayer",
+      "codice-stanza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "5-min"
+    ],
+    "players": {
+      "min": 2,
+      "max": 2
+    },
     "durataMin": 3,
     "cover": "/covers/tris.png",
     "rottaInterna": "/giochi/tris"
@@ -29,8 +52,19 @@
     "gameId": "scacchi",
     "titolo": "Scacchi 2 giocatori",
     "descrizione": "Scacchiera completa con regole ufficiali (arrocco, en passant, promozione). Stanza a codice, matto e patta rilevati.",
-    "tags": ["2-giocatori", "multiplayer", "codice-stanza", "no-account", "mobile", "italiano", "15-min"],
-    "players": { "min": 2, "max": 2 },
+    "tags": [
+      "2-giocatori",
+      "multiplayer",
+      "codice-stanza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "15-min"
+    ],
+    "players": {
+      "min": 2,
+      "max": 2
+    },
     "durataMin": 20,
     "cover": "/covers/scacchi.png",
     "rottaInterna": "/giochi/scacchi"
@@ -41,8 +75,18 @@
     "gameId": "quiz",
     "titolo": "Quiz veloce",
     "descrizione": "20 domande a risposta multipla in italiano: scienza, storia, geografia e spazio. Punteggio + spiegazione.",
-    "tags": ["single", "quiz", "no-account", "mobile", "italiano", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "single",
+      "quiz",
+      "no-account",
+      "mobile",
+      "italiano",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/quiz.png",
     "rottaInterna": "/giochi/quiz"
@@ -52,8 +96,19 @@
     "tipo": "gioco",
     "titolo": "Lichess — Scacchi vs computer",
     "descrizione": "Scacchi gratis contro il computer o puzzle, senza account obbligatorio per le partite veloci.",
-    "tags": ["scacchi", "single", "no-account", "mobile", "italiano", "link-esterno", "15-min"],
-    "players": { "min": 1, "max": 2 },
+    "tags": [
+      "scacchi",
+      "single",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno",
+      "15-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 2
+    },
     "durataMin": 15,
     "cover": "/covers/lichess.png",
     "linkEsterno": "https://lichess.org"
@@ -63,8 +118,19 @@
     "tipo": "gioco",
     "titolo": "Puzzle Storm (Lichess)",
     "descrizione": "Risolvi più puzzle scacchistici in 3 minuti. Perfetto passa-tempo da record personale.",
-    "tags": ["scacchi", "single", "veloce", "no-account", "mobile", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "scacchi",
+      "single",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 3,
     "cover": "/covers/storm.png",
     "linkEsterno": "https://lichess.org/storm"
@@ -74,8 +140,19 @@
     "tipo": "gioco",
     "titolo": "Gartic Phone — telefono senza fili",
     "descrizione": "Disegna e indovina a catena con amici tramite link stanza, senza account. Come le tue lobby a codice.",
-    "tags": ["multiplayer", "codice-stanza", "no-account", "mobile", "italiano", "link-esterno", "15-min"],
-    "players": { "min": 4, "max": 30 },
+    "tags": [
+      "multiplayer",
+      "codice-stanza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno",
+      "15-min"
+    ],
+    "players": {
+      "min": 4,
+      "max": 30
+    },
     "durataMin": 15,
     "cover": "/covers/gartic.png",
     "linkEsterno": "https://garticphone.com"
@@ -85,8 +162,19 @@
     "tipo": "gioco",
     "titolo": "Skribbl.io — disegna e indovina",
     "descrizione": "Pictionary online: stanza privata con codice, senza account. Ideale da linkare come alternativa al Tris.",
-    "tags": ["multiplayer", "codice-stanza", "no-account", "mobile", "italiano", "link-esterno", "15-min"],
-    "players": { "min": 2, "max": 12 },
+    "tags": [
+      "multiplayer",
+      "codice-stanza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno",
+      "15-min"
+    ],
+    "players": {
+      "min": 2,
+      "max": 12
+    },
     "durataMin": 10,
     "cover": "/covers/skribbl.png",
     "linkEsterno": "https://skribbl.io"
@@ -96,8 +184,18 @@
     "tipo": "gioco",
     "titolo": "CityGuessr — indovina la città",
     "descrizione": "Foto panoramiche e indovina dove sei. Alternativa gratis a GeoGuessr, senza account.",
-    "tags": ["geografia", "single", "no-account", "mobile", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "geografia",
+      "single",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/cityguessr.png",
     "linkEsterno": "https://www.cityguessr.com"
@@ -107,8 +205,18 @@
     "tipo": "gioco",
     "titolo": "2048",
     "descrizione": "Unisci i numeri fino a 2048. Single, immediato, senza account, perfetto da mobile.",
-    "tags": ["single", "veloce", "no-account", "mobile", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "single",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/2048.png",
     "linkEsterno": "https://play2048.co"
@@ -118,8 +226,19 @@
     "tipo": "gioco",
     "titolo": "TETR.IO — Tetris veloce",
     "descrizione": "Tetris moderno gratis. Quick Play senza account, multiplayer con account gratis (fase 2).",
-    "tags": ["single", "veloce", "no-account", "mobile", "inglese", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "single",
+      "veloce",
+      "no-account",
+      "mobile",
+      "inglese",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/tetrio.png",
     "linkEsterno": "https://tetr.io"
@@ -129,8 +248,19 @@
     "tipo": "gioco",
     "titolo": "Slither.io — serpentone",
     "descrizione": ".io classico: mangia e cresci senza account. Partite da 5 minuti.",
-    "tags": ["single", "multiplayer", "veloce", "no-account", "mobile", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "single",
+      "multiplayer",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/slither.png",
     "linkEsterno": "https://slither.io"
@@ -140,8 +270,19 @@
     "tipo": "gioco",
     "titolo": "Campo Minato",
     "descrizione": "Campo Minato gratis con livelli e daily challenge, senza account.",
-    "tags": ["single", "classico", "no-account", "mobile", "italiano", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "single",
+      "classico",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/mines.png",
     "linkEsterno": "https://minesweeper.online"
@@ -151,8 +292,19 @@
     "tipo": "gioco",
     "titolo": "Sudoku giornaliero",
     "descrizione": "Sudoku con livelli facile→esperto e sfida del giorno, senza account.",
-    "tags": ["single", "classico", "no-account", "mobile", "italiano", "link-esterno", "15-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "single",
+      "classico",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno",
+      "15-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 10,
     "cover": "/covers/sudoku.png",
     "linkEsterno": "https://sudoku.com"
@@ -162,8 +314,18 @@
     "tipo": "gioco",
     "titolo": "Dino runner",
     "descrizione": "Il dinosauro di Chrome: salta i cactus. 2 minuti, senza account.",
-    "tags": ["single", "veloce", "no-account", "mobile", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "single",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 2,
     "cover": "/covers/dino.png",
     "linkEsterno": "https://chromedino.com"
@@ -173,8 +335,19 @@
     "tipo": "gioco",
     "titolo": "Parola del giorno (Wordle IT)",
     "descrizione": "Indovina la parola italiana in 6 tentativi. Gratis, senza account.",
-    "tags": ["single", "parole", "no-account", "mobile", "italiano", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "single",
+      "parole",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 4,
     "cover": "/covers/wordle.png",
     "linkEsterno": "https://pietroppeter.github.io/wordle-it/"
@@ -184,8 +357,18 @@
     "tipo": "curiosita",
     "titolo": "Cielo live — aerei sopra l'Italia",
     "descrizione": "Mappa con aerei reali aggiornati ogni 12s via OpenSky. Click su un aereo per dettagli e tracking.",
-    "tags": ["cielo", "spazio", "mappa", "no-account", "mobile", "italiano"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "cielo",
+      "spazio",
+      "mappa",
+      "no-account",
+      "mobile",
+      "italiano"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/cielo.png",
     "rottaInterna": "/cielo"
@@ -195,8 +378,18 @@
     "tipo": "curiosita",
     "titolo": "Radio Garden — radio dal mondo",
     "descrizione": "Ruota il globo e ascolta radio live da ogni paese. Zero account, ipnotico.",
-    "tags": ["musica", "mappa", "no-account", "mobile", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "musica",
+      "mappa",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/radio.png",
     "linkEsterno": "https://radio.garden/"
@@ -206,8 +399,19 @@
     "tipo": "curiosita",
     "titolo": "Windy — vento e pioggia live",
     "descrizione": "Mappe animate di vento, pioggia e temporali. Base gratis senza account.",
-    "tags": ["cielo", "mappa", "scienza", "no-account", "mobile", "italiano", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "cielo",
+      "mappa",
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/windy.png",
     "linkEsterno": "https://www.windy.com"
@@ -217,8 +421,17 @@
     "tipo": "curiosita",
     "titolo": "MarineTraffic — navi live",
     "descrizione": "Come il tuo /cielo ma per il mare: navi in tempo reale con dettagli. Freemium con link.",
-    "tags": ["mare", "mappa", "no-account", "mobile", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "mare",
+      "mappa",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/navi.png",
     "linkEsterno": "https://www.marinetraffic.com"
@@ -228,8 +441,19 @@
     "tipo": "curiosita",
     "titolo": "Dov'è la Stazione Spaziale?",
     "descrizione": "Mappa live della ISS della NASA + orari dei passaggi visibili dall'Italia.",
-    "tags": ["spazio", "cielo", "mappa", "scienza", "no-account", "mobile", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "spazio",
+      "cielo",
+      "mappa",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 3,
     "cover": "/covers/iss.png",
     "linkEsterno": "https://spotthestation.nasa.gov/tracking_map.cfm"
@@ -239,8 +463,18 @@
     "tipo": "curiosita",
     "titolo": "Stellarium — cielo notturno",
     "descrizione": "Planetario nel browser: costellazioni e pianeti sopra di te, gratis senza account.",
-    "tags": ["spazio", "cielo", "scienza", "no-account", "mobile", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "spazio",
+      "cielo",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/stellarium.png",
     "linkEsterno": "https://stellarium-web.org/"
@@ -250,8 +484,17 @@
     "tipo": "curiosita",
     "titolo": "Sistema Solare 3D",
     "descrizione": "Esplora pianeti e lune in 3D. Base gratis senza account.",
-    "tags": ["spazio", "scienza", "no-account", "mobile", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/solarscope.png",
     "linkEsterno": "https://www.solarsystemscope.com"
@@ -261,8 +504,18 @@
     "tipo": "curiosita",
     "titolo": "Scala dell'Universo",
     "descrizione": "Scorri dall'atomo alle galassie: la scala interattiva più famosa del web.",
-    "tags": ["spazio", "scienza", "no-account", "mobile", "link-esterno", "5-min"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/scale.png",
     "linkEsterno": "https://scaleofuniverse.com"
@@ -272,8 +525,16 @@
     "tipo": "curiosita",
     "titolo": "100.000 Stelle in 3D",
     "descrizione": "Viaggio Chrome Experiment tra 100mila stelle vicine. Gratis, molto scenografico.",
-    "tags": ["spazio", "scienza", "no-account", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 5,
     "cover": "/covers/stars.png",
     "linkEsterno": "https://stars.chromeexperiments.withgoogle.com/"
@@ -283,8 +544,18 @@
     "tipo": "curiosita",
     "titolo": "Webcam live Italia",
     "descrizione": "Piazze, spiagge e vulcani in diretta. Perfette per perdere 2 minuti.",
-    "tags": ["geografia", "natura", "no-account", "mobile", "italiano", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "geografia",
+      "natura",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 2,
     "cover": "/covers/webcam.png",
     "linkEsterno": "https://www.skylinewebcams.com/it/"
@@ -294,8 +565,19 @@
     "tipo": "curiosita",
     "titolo": "Terremoti live INGV",
     "descrizione": "Lista in tempo reale dei terremoti in Italia con mappa e magnitudo. Fonte ufficiale.",
-    "tags": ["scienza", "natura", "mappa", "no-account", "mobile", "italiano", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "scienza",
+      "natura",
+      "mappa",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 3,
     "cover": "/covers/ingv.png",
     "linkEsterno": "https://terremoti.ingv.it/"
@@ -305,8 +587,18 @@
     "tipo": "curiosita",
     "titolo": "Dove vedere le stelle?",
     "descrizione": "Mappa dell'inquinamento luminoso: trova il cielo più buio vicino a te.",
-    "tags": ["spazio", "cielo", "natura", "mappa", "no-account", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "spazio",
+      "cielo",
+      "natura",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 3,
     "cover": "/covers/darksky.png",
     "linkEsterno": "https://www.lightpollutionmap.info"
@@ -316,8 +608,17 @@
     "tipo": "curiosita",
     "titolo": "I cavi internet sotto il mare",
     "descrizione": "Mappa dei cavi sottomarini che portano internet in tutto il mondo. Sorprendente.",
-    "tags": ["tech", "mare", "mappa", "no-account", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "tech",
+      "mare",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 3,
     "cover": "/covers/cavi.png",
     "linkEsterno": "https://www.submarinecablemap.com/"
@@ -327,8 +628,17 @@
     "tipo": "curiosita",
     "titolo": "Foto spazio del giorno (NASA)",
     "descrizione": "Ogni giorno una foto dell'universo con spiegazione. Gratis via sito e API.",
-    "tags": ["spazio", "scienza", "no-account", "mobile", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 2,
     "cover": "/covers/apod.png",
     "linkEsterno": "https://apod.nasa.gov/"
@@ -338,8 +648,19 @@
     "tipo": "curiosita",
     "titolo": "Voce a sorpresa — Wikipedia",
     "descrizione": "Bottone 'sorprendimi': apre una voce casuale di Wikipedia in italiano.",
-    "tags": ["storia", "scienza", "natura", "no-account", "mobile", "italiano", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "storia",
+      "scienza",
+      "natura",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 3,
     "cover": "/covers/wiki.png",
     "linkEsterno": "https://it.wikipedia.org/wiki/Speciale:PaginaCasuale"
@@ -349,10 +670,663 @@
     "tipo": "curiosita",
     "titolo": "Focus — curiosità scientifiche",
     "descrizione": "Articoli brevi in italiano su animali, spazio, corpo umano. Tono perfetto per le tue card.",
-    "tags": ["scienza", "natura", "storia", "no-account", "mobile", "italiano", "link-esterno"],
-    "players": { "min": 1, "max": 1 },
+    "tags": [
+      "scienza",
+      "natura",
+      "storia",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
     "durataMin": 4,
     "cover": "/covers/focus.png",
     "linkEsterno": "https://www.focus.it/curiosita"
+  },
+  {
+    "id": "fulmini-live",
+    "tipo": "curiosita",
+    "titolo": "Fulmini live — mappa in tempo reale",
+    "descrizione": "Fulmini in tempo reale su mappa con tuono. Community Blitzortung gratis.",
+    "tags": [
+      "cielo",
+      "mappa",
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/fulmini.png",
+    "linkEsterno": "https://www.lightningmaps.org"
+  },
+  {
+    "id": "energia-live",
+    "tipo": "curiosita",
+    "titolo": "Energia live — da dove viene l'elettricità",
+    "descrizione": "Mappa live di produzione elettrica e CO₂ per paese.",
+    "tags": [
+      "mappa",
+      "tech",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/energia.png",
+    "linkEsterno": "https://app.electricitymaps.com/map"
+  },
+  {
+    "id": "treni-live",
+    "tipo": "curiosita",
+    "titolo": "Treni Italia live — ritardi su mappa",
+    "descrizione": "Cerca treno o stazione e vedi posizione e ritardi in tempo reale.",
+    "tags": [
+      "mappa",
+      "tech",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/treni.png",
+    "linkEsterno": "https://www.viaggiatreno.it"
+  },
+  {
+    "id": "aria-live",
+    "tipo": "curiosita",
+    "titolo": "Aria live — qualità vicino a te",
+    "descrizione": "Mappa mondiale della qualità dell'aria con dettaglio Italia.",
+    "tags": [
+      "mappa",
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 2,
+    "cover": "/covers/aria.png",
+    "linkEsterno": "https://aqicn.org/map/italy/it/"
+  },
+  {
+    "id": "satelliti-live",
+    "tipo": "curiosita",
+    "titolo": "Satelliti live — ISS e Starlink",
+    "descrizione": "Traccia ISS, Starlink e satelliti sopra di te in tempo reale.",
+    "tags": [
+      "spazio",
+      "mappa",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/satelliti.png",
+    "linkEsterno": "https://www.n2yo.com"
+  },
+  {
+    "id": "sole-live",
+    "tipo": "curiosita",
+    "titolo": "Sole live NASA",
+    "descrizione": "Il Sole in diretta dal satellite SDO della NASA.",
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 2,
+    "cover": "/covers/sole.png",
+    "linkEsterno": "https://sdo.gsfc.nasa.gov/data/"
+  },
+  {
+    "id": "webcam-animali",
+    "tipo": "curiosita",
+    "titolo": "Webcam animali — orsi e oceani live",
+    "descrizione": "Orsi, aquile e barriere coralline in diretta, gratis senza account.",
+    "tags": [
+      "natura",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/animali.png",
+    "linkEsterno": "https://explore.org/livecams"
+  },
+  {
+    "id": "uccelli-italia",
+    "tipo": "curiosita",
+    "titolo": "Uccelli Italia — avvistamenti live",
+    "descrizione": "Avvistamenti di uccelli vicino a te, citizen science in italiano.",
+    "tags": [
+      "natura",
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/uccelli.png",
+    "linkEsterno": "https://ebird.org/region/IT"
+  },
+  {
+    "id": "inaturalist",
+    "tipo": "curiosita",
+    "titolo": "iNaturalist — riconosci la natura",
+    "descrizione": "Fotografa una pianta o un animale e la community lo identifica.",
+    "tags": [
+      "natura",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/inaturalist.png",
+    "linkEsterno": "https://www.inaturalist.org"
+  },
+  {
+    "id": "albero-vita",
+    "tipo": "curiosita",
+    "titolo": "Albero della vita — zoom interattivo",
+    "descrizione": "Esplora l'albero della vita da funghi a balene, spettacolare.",
+    "tags": [
+      "natura",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/onezoom.png",
+    "linkEsterno": "https://www.onezoom.org"
+  },
+  {
+    "id": "inaf-news",
+    "tipo": "curiosita",
+    "titolo": "INAF — spazio in italiano",
+    "descrizione": "Notizie spaziali spiegate in italiano, fonte ufficiale.",
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 4,
+    "cover": "/covers/inaf.png",
+    "linkEsterno": "https://www.media.inaf.it"
+  },
+  {
+    "id": "asi",
+    "tipo": "curiosita",
+    "titolo": "ASI — Agenzia Spaziale Italiana",
+    "descrizione": "Missioni, video e news dell'Agenzia Spaziale Italiana.",
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 4,
+    "cover": "/covers/asi.png",
+    "linkEsterno": "https://www.asi.it"
+  },
+  {
+    "id": "passaggi-iss",
+    "tipo": "curiosita",
+    "titolo": "Passaggi ISS — quando vederla",
+    "descrizione": "Orari dei passaggi visibili di ISS e satelliti dalla tua città.",
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/heavens.png",
+    "linkEsterno": "https://www.heavens-above.com"
+  },
+  {
+    "id": "neal-fun",
+    "tipo": "gioco",
+    "titolo": "Neal.fun — 40 mini-siti",
+    "descrizione": "Hub di mini-giochi e curiosità interattive: inizia da qui e perditi.",
+    "tags": [
+      "single",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/neal.png",
+    "linkEsterno": "https://neal.fun/"
+  },
+  {
+    "id": "deep-sea",
+    "tipo": "curiosita",
+    "titolo": "Deep Sea — scendi nell'abisso",
+    "descrizione": "Scorri fino a 10.000 metri e scopri le creature degli abissi.",
+    "tags": [
+      "natura",
+      "mare",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/deepsea.png",
+    "linkEsterno": "https://neal.fun/deep-sea/"
+  },
+  {
+    "id": "size-of-space",
+    "tipo": "curiosita",
+    "titolo": "Size of Space — dimensioni interattive",
+    "descrizione": "Dalla tuta spaziale alle galassie: quanto è grande lo spazio?",
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/sizeofspace.png",
+    "linkEsterno": "https://neal.fun/size-of-space/"
+  },
+  {
+    "id": "asteroid-launcher",
+    "tipo": "gioco",
+    "titolo": "Asteroid Launcher — lancia un asteroide",
+    "descrizione": "Scegli un asteroide e lancialo sulla tua città: danni simulati.",
+    "tags": [
+      "single",
+      "spazio",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/asteroid.png",
+    "linkEsterno": "https://neal.fun/asteroid-launcher/"
+  },
+  {
+    "id": "perfect-circle",
+    "tipo": "gioco",
+    "titolo": "Perfect Circle — disegna il cerchio",
+    "descrizione": "Disegna un cerchio perfetto col dito e sfida gli amici.",
+    "tags": [
+      "single",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 2,
+    "cover": "/covers/circle.png",
+    "linkEsterno": "https://neal.fun/perfect-circle/"
+  },
+  {
+    "id": "password-game",
+    "tipo": "gioco",
+    "titolo": "Password Game — il gioco virale",
+    "descrizione": "Crea una password che rispetti regole sempre più assurde.",
+    "tags": [
+      "single",
+      "parole",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/password.png",
+    "linkEsterno": "https://neal.fun/password-game/"
+  },
+  {
+    "id": "quickdraw",
+    "tipo": "gioco",
+    "titolo": "Quick Draw — scarabocchia, AI indovina",
+    "descrizione": "Disegna in 20 secondi e l'intelligenza di Google indovina, in italiano.",
+    "tags": [
+      "single",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/quickdraw.png",
+    "linkEsterno": "https://quickdraw.withgoogle.com"
+  },
+  {
+    "id": "music-lab",
+    "tipo": "gioco",
+    "titolo": "Music Lab — componi in 2 minuti",
+    "descrizione": "Song Maker ed esperimenti musicali nel browser, gratis.",
+    "tags": [
+      "single",
+      "musica",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/musiclab.png",
+    "linkEsterno": "https://musiclab.chromeexperiments.withgoogle.com"
+  },
+  {
+    "id": "human-benchmark",
+    "tipo": "gioco",
+    "titolo": "Human Benchmark — riflessi e memoria",
+    "descrizione": "Test di reazione, memoria e sequenze con punteggio da battere.",
+    "tags": [
+      "single",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "cover": "/covers/benchmark.png",
+    "linkEsterno": "https://humanbenchmark.com"
+  },
+  {
+    "id": "treccani",
+    "tipo": "curiosita",
+    "titolo": "Treccani — enciclopedia italiana",
+    "descrizione": "La voce del giorno dell'enciclopedia italiana più autorevole.",
+    "tags": [
+      "storia",
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 4,
+    "cover": "/covers/treccani.png",
+    "linkEsterno": "https://www.treccani.it"
+  },
+  {
+    "id": "sapere",
+    "tipo": "curiosita",
+    "titolo": "Sapere.it — pillole De Agostini",
+    "descrizione": "Pillole di storia e scienza in italiano, perfette per le card.",
+    "tags": [
+      "storia",
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 4,
+    "cover": "/covers/sapere.png",
+    "linkEsterno": "https://www.sapere.it"
+  },
+  {
+    "id": "cicap",
+    "tipo": "curiosita",
+    "titolo": "CICAP — scienza vs bufale",
+    "descrizione": "Misteri e bufale spiegati con metodo scientifico, in italiano.",
+    "tags": [
+      "scienza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 4,
+    "cover": "/covers/cicap.png",
+    "linkEsterno": "https://www.cicap.org"
+  },
+  {
+    "id": "focus-junior",
+    "tipo": "curiosita",
+    "titolo": "Focus Junior — curiosità ragazzi",
+    "descrizione": "Curiosità scientifiche con tono leggero, per ragazzi e non solo.",
+    "tags": [
+      "scienza",
+      "natura",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 4,
+    "cover": "/covers/focusjunior.png",
+    "linkEsterno": "https://www.focusjunior.it"
+  },
+  {
+    "id": "window-swap",
+    "tipo": "curiosita",
+    "titolo": "Window Swap — finestre del mondo",
+    "descrizione": "Guarda il panorama dalla finestra di uno sconosciuto da qualche parte.",
+    "tags": [
+      "geografia",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 2,
+    "cover": "/covers/window.png",
+    "linkEsterno": "https://www.window-swap.com"
+  },
+  {
+    "id": "true-size",
+    "tipo": "curiosita",
+    "titolo": "True Size — dimensioni vere dei paesi",
+    "descrizione": "Trascina i paesi sulla mappa e scopri quanto sono grandi davvero.",
+    "tags": [
+      "geografia",
+      "mappa",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/truesize.png",
+    "linkEsterno": "https://www.thetruesize.com"
+  },
+  {
+    "id": "mapcrunch",
+    "tipo": "curiosita",
+    "titolo": "MapCrunch — teletrasporto casuale",
+    "descrizione": "Un click e finisci in una strada casuale del mondo via Street View.",
+    "tags": [
+      "geografia",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/mapcrunch.png",
+    "linkEsterno": "https://www.mapcrunch.com"
+  },
+  {
+    "id": "wayback",
+    "tipo": "curiosita",
+    "titolo": "Wayback Machine — web del passato",
+    "descrizione": "Com'era Google o il tuo sito preferito nel 2005? Scoprilo qui.",
+    "tags": [
+      "tech",
+      "storia",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "cover": "/covers/wayback.png",
+    "linkEsterno": "https://web.archive.org"
+  },
+  {
+    "id": "useless-web",
+    "tipo": "curiosita",
+    "titolo": "The Useless Web — sito assurdo",
+    "descrizione": "Un bottone, un sito assurdo casuale. Il passa-tempo più stupido del web.",
+    "tags": [
+      "veloce",
+      "single",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 2,
+    "cover": "/covers/useless.png",
+    "linkEsterno": "https://theuselessweb.com"
   }
 ]
