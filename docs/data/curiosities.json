@@ -1,0 +1,98 @@
+[
+  {
+    "id": "miele-eterno",
+    "titolo": "Il miele non scade mai",
+    "testo": "In tombe egizie vecchie di 3000 anni è stato trovato miele ancora commestibile. Merito della bassa umidità e dell'acidità che bloccano batteri e muffe. Se cristallizza, basta scaldarlo a bagnomaria.",
+    "fonteNome": "Wikipedia — Miele",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Miele",
+    "tags": ["scienza", "natura", "cibo", "italiano"]
+  },
+  {
+    "id": "polpo-3-cuori",
+    "titolo": "Il polpo ha 3 cuori e il sangue blu",
+    "testo": "Due cuori pompano sangue alle branchie, uno al corpo. Il sangue è blu per l'emocianina a base di rame. Quando nuota, il cuore principale si ferma: ecco perché preferisce camminare sul fondale.",
+    "fonteNome": "Wikipedia — Octopoda",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Octopoda",
+    "tags": ["natura", "mare", "scienza", "italiano"]
+  },
+  {
+    "id": "banane-radioattive",
+    "titolo": "Le banane sono (un po') radioattive",
+    "testo": "Contengono potassio-40, un isotopo naturale. La dose è minuscola: dovresti mangiare 10 milioni di banane in una volta per avere problemi. Esiste persino l'unità scherzosa 'BED' (Banana Equivalent Dose).",
+    "fonteNome": "Wikipedia — Banana equivalent dose",
+    "fonteUrl": "https://en.wikipedia.org/wiki/Banana_equivalent_dose",
+    "tags": ["scienza", "cibo", "inglese"]
+  },
+  {
+    "id": "fulmine-sole",
+    "titolo": "Un fulmine è più caldo del Sole",
+    "testo": "La superficie del Sole è ~5500 °C, un fulmine arriva a ~30000 °C: 5 volte tanto, ma dura millisecondi. Il tuono è l'aria che si espande di colpo per il calore.",
+    "fonteNome": "Wikipedia — Fulmine",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Fulmine",
+    "tags": ["scienza", "cielo", "italiano"]
+  },
+  {
+    "id": "squali-alberi",
+    "titolo": "Gli squali sono più antichi degli alberi",
+    "testo": "Gli squali nuotano da ~450 milioni di anni, gli alberi esistono da ~350 milioni. Sono più antichi anche degli anelli di Saturno e della Stella Polare come la vediamo oggi.",
+    "fonteNome": "Wikipedia — Selachimorpha",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Selachimorpha",
+    "tags": ["natura", "storia", "scienza", "italiano"]
+  },
+  {
+    "id": "iss-velocita",
+    "titolo": "La ISS va a 27600 km/h",
+    "testo": "La Stazione Spaziale fa il giro della Terra in 90 minuti: 16 albe e 16 tramonti al giorno per gli astronauti. Puoi vederla a occhio nudo come un punto luminoso veloce.",
+    "fonteNome": "NASA — Spot the Station",
+    "fonteUrl": "https://spotthestation.nasa.gov/tracking_map.cfm",
+    "tags": ["spazio", "scienza", "cielo"]
+  },
+  {
+    "id": "cuore-gambero",
+    "titolo": "Il cuore del gambero è nella testa",
+    "testo": "Torace e testa sono fusi nel cefalotorace: cuore, stomaco e organi principali stanno lì. In più i gamberi hanno il sangue azzurrino e vedono colori che noi non immaginiamo.",
+    "fonteNome": "Wikipedia — Caridea",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Caridea",
+    "tags": ["natura", "mare", "italiano"]
+  },
+  {
+    "id": "luna-allontana",
+    "titolo": "La Luna scappa: +3,8 cm all'anno",
+    "testo": "Per l'attrito delle maree la Luna si allontana di 3,8 cm l'anno. Tra 600 milioni di anni sarà troppo lontana per le eclissi totali perfette come quelle di oggi.",
+    "fonteNome": "Wikipedia — Luna",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Luna",
+    "tags": ["spazio", "scienza", "italiano"]
+  },
+  {
+    "id": "vene-azzurre",
+    "titolo": "Il sangue non è mai blu (ma le vene sì... in apparenza)",
+    "testo": "Il sangue venoso è rosso scuro, non blu. Le vene sembrano blu per come la pelle assorbe e riflette la luce. Il sangue blu esiste davvero solo in polpi e aragoste.",
+    "fonteNome": "Focus — curiosità corpo umano",
+    "fonteUrl": "https://www.focus.it/curiosita",
+    "tags": ["scienza", "corpo", "italiano"]
+  },
+  {
+    "id": "saturno-galleggia",
+    "titolo": "Saturno galleggerebbe sull'acqua",
+    "testo": "Densità media 0,69 g/cm³ contro 1 dell'acqua: in una vasca gigante galleggerebbe. Peccato che servirebbe una vasca larga 120.000 km.",
+    "fonteNome": "Wikipedia — Saturno",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Saturno_(astronomia)",
+    "tags": ["spazio", "scienza", "italiano"]
+  },
+  {
+    "id": "biblioteca-vichinghi",
+    "titolo": "I Vichinghi usavano le pietre di sole",
+    "testo": "Con cielo nuvoloso si orientavano con cristalli di calcite che polarizzano la luce e indicano il Sole. Esperimenti moderni mostrano che funziona davvero.",
+    "fonteNome": "Wikipedia — Pietra di sole",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Pietra_del_sole_(archeologia)",
+    "tags": ["storia", "scienza", "italiano"]
+  },
+  {
+    "id": "tardigradi-spazio",
+    "titolo": "I tardigradi sopravvivono nello spazio",
+    "testo": "Questi micro-animali da 1 mm resistono a vuoto, radiazioni e -270 °C entrando in criptobiosi. Nel 2007 sono sopravvissuti 10 giorni fuori dalla ISS.",
+    "fonteNome": "Wikipedia — Tardigrada",
+    "fonteUrl": "https://it.wikipedia.org/wiki/Tardigrada",
+    "tags": ["natura", "spazio", "scienza", "italiano"]
+  }
+]

@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+dist-ssr/
+
+# vite
+*.local
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs
+logs/
+*.log
+npm-debug.log*

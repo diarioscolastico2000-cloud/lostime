@@ -1,0 +1,92 @@
+[
+  {
+    "domanda": "Quale pianeta galleggerebbe sull'acqua per la sua bassa densità?",
+    "scelte": ["Saturno", "Marte", "Venere", "Mercurio"],
+    "correttaIndex": 0,
+    "spiegazione": "Saturno ha densità 0,69 g/cm³, minore dell'acqua."
+  },
+  {
+    "domanda": "Quanti cuori ha un polpo?",
+    "scelte": ["1", "2", "3", "4"],
+    "correttaIndex": 2,
+    "spiegazione": "Due per le branchie e uno per il corpo; il sangue è blu."
+  },
+  {
+    "domanda": "Quanto è veloce la Stazione Spaziale Internazionale?",
+    "scelte": ["800 km/h", "2.700 km/h", "27.600 km/h", "107.000 km/h"],
+    "correttaIndex": 2,
+    "spiegazione": "Fa il giro della Terra in circa 90 minuti."
+  },
+  {
+    "domanda": "Di quanto si allontana la Luna ogni anno?",
+    "scelte": ["3,8 mm", "3,8 cm", "3,8 m", "3,8 km"],
+    "correttaIndex": 1,
+    "spiegazione": "3,8 cm/anno per l'attrito delle maree."
+  },
+  {
+    "domanda": "Chi è più antico: squali o alberi?",
+    "scelte": ["Gli alberi", "Gli squali", "Comparsi insieme", "Nessuno dei due è antico"],
+    "correttaIndex": 1,
+    "spiegazione": "Squali ~450 mln di anni, alberi ~350 mln."
+  },
+  {
+    "domanda": "Cosa significa 'scacco matto' in origine?",
+    "scelte": ["Il re è morto", "Il re è in trappola", "Il re è fuggito", "La regina ha vinto"],
+    "correttaIndex": 0,
+    "spiegazione": "Dal persiano 'shah mat' = il re è morto / indifeso."
+  },
+  {
+    "domanda": "Quale cibo non scade mai se conservato bene?",
+    "scelte": ["Pane", "Latte", "Miele", "Mele"],
+    "correttaIndex": 2,
+    "spiegazione": "Miele trovato commestibile dopo 3000 anni in tombe egizie."
+  },
+  {
+    "domanda": "Quale frutto è leggermente radioattivo per il potassio-40?",
+    "scelte": ["Mela", "Banana", "Pera", "Uva"],
+    "correttaIndex": 1,
+    "spiegazione": "Dose irrisoria: esiste la 'Banana Equivalent Dose' scherzosa."
+  },
+  {
+    "domanda": "Un fulmine rispetto alla superficie del Sole è...",
+    "scelte": ["Più freddo", "Uguale", "5 volte più caldo", "100 volte più freddo"],
+    "correttaIndex": 2,
+    "spiegazione": "~30000 °C contro ~5500 °C, ma dura millisecondi."
+  },
+  {
+    "domanda": "Dove si trova il cuore del gambero?",
+    "scelte": ["Nella coda", "Nella testa", "Nell'addome", "Non ha cuore"],
+    "correttaIndex": 1,
+    "spiegazione": "Nel cefalotorace, fusione di testa e torace."
+  },
+  {
+    "domanda": "Quale animale è sopravvissuto 10 giorni nello spazio aperto?",
+    "scelte": ["Tardigrado", "Formica", "Geco", "Topo"],
+    "correttaIndex": 0,
+    "spiegazione": "Nel 2007 fuori dalla ISS, in criptobiosi."
+  },
+  {
+    "domanda": "Roma: in quale anno cade l'Impero romano d'Occidente (convenzione)?",
+    "scelte": ["476 d.C.", "1453 d.C.", "44 a.C.", "800 d.C."],
+    "correttaIndex": 0,
+    "spiegazione": "Deposizione di Romolo Augustolo nel 476."
+  },
+  {
+    "domanda": "Qual è il fiume più lungo d'Italia?",
+    "scelte": ["Tevere", "Arno", "Po", "Adige"],
+    "correttaIndex": 2,
+    "spiegazione": "Po ~652 km, dal Monviso all'Adriatico."
+  },
+  {
+    "domanda": "Nel Tris, con gioco perfetto da entrambi, come finisce?",
+    "scelte": ["Vince sempre X", "Vince sempre O", "Pareggio", "Vince chi inizia la seconda"],
+    "correttaIndex": 2,
+    "spiegazione": "Il Tris è un pareggio teorico con gioco perfetto."
+  },
+  {
+    "domanda": "Cosa mostra la mappa dell'inquinamento luminoso?",
+    "scelte": ["Dove piove", "Dove il cielo è più buio", "Dove ci sono terremoti", "Dove volano gli aerei"],
+    "correttaIndex": 1,
+    "spiegazione": "Serve a trovare posti con cielo buio per vedere le stelle."
+  }
+]
