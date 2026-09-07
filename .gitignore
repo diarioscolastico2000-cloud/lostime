@@ -27,3 +27,6 @@ dist-ssr/
 logs/
 *.log
 npm-debug.log*
+
+# nested clone accidentale da escludere
+lostime/
