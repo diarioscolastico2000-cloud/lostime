@@ -1447,5 +1447,141 @@
     },
     "durataMin": 3,
     "linkEsterno": "https://stuffin.space/"
+  },
+  {
+    "id": "zoom-earth",
+    "tipo": "curiosita",
+    "titolo": "Zoom Earth — uragani live",
+    "descrizione": "Uragani e tempeste tropicali in tempo reale con immagini satellitari.",
+    "tags": [
+      "natura",
+      "mappa",
+      "meteo",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://zoom.earth/"
+  },
+  {
+    "id": "rsoe-edis",
+    "tipo": "curiosita",
+    "titolo": "Allerte emergenze mondo (RSOE)",
+    "descrizione": "Disastri naturali ed emergenze nel mondo in tempo reale su mappa.",
+    "tags": [
+      "scienza",
+      "natura",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://rsoe-edis.org/"
+  },
+  {
+    "id": "akinator",
+    "tipo": "gioco",
+    "titolo": "Akinator — il genio",
+    "descrizione": "Pensa a un personaggio: il genio lo indovina con domande sì/no.",
+    "tags": [
+      "single",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://en.akinator.com/"
+  },
+  {
+    "id": "wiki-game",
+    "tipo": "gioco",
+    "titolo": "The Wiki Game — gara Wikipedia",
+    "descrizione": "Da una pagina Wikipedia all'altra usando solo i link, anche contro altri online.",
+    "tags": [
+      "single",
+      "multiplayer",
+      "parole",
+      "no-account",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://www.thewikigame.com/"
+  },
+  {
+    "id": "pointer-pointer",
+    "tipo": "curiosita",
+    "titolo": "Pointer Pointer",
+    "descrizione": "Una foto indica esattamente dove si trova il tuo cursore. Stupido e irresistibile.",
+    "tags": [
+      "single",
+      "veloce",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 2,
+    "linkEsterno": "http://pointerpointer.com/"
+  },
+  {
+    "id": "agar-io",
+    "tipo": "gioco",
+    "titolo": "Agar.io — cellula vs mondo",
+    "descrizione": "Multiplayer .io: mangia e cresci eliminando gli altri in tempo reale.",
+    "tags": [
+      "multiplayer",
+      "veloce",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://agar.io/"
+  },
+  {
+    "id": "little-alchemy",
+    "tipo": "gioco",
+    "titolo": "Little Alchemy 2",
+    "descrizione": "Combina terra, acqua, fuoco e aria per scoprire centinaia di elementi.",
+    "tags": [
+      "single",
+      "no-account",
+      "mobile",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 10,
+    "linkEsterno": "https://littlealchemy2.com/"
   }
 ]
