@@ -1784,5 +1784,134 @@
     },
     "durataMin": 10,
     "linkEsterno": "https://kahoot.com/"
+  },
+  {
+    "id": "opensky-network",
+    "tipo": "curiosita",
+    "titolo": "OpenSky — i dati del tuo /cielo",
+    "descrizione": "La rete open no-profit che traccia i voli: stessa fonte della mappa Cielo di LosTime.",
+    "tags": [
+      "spazio",
+      "cielo",
+      "tech",
+      "scienza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://opensky-network.org/"
+  },
+  {
+    "id": "spaceweatherlive",
+    "tipo": "curiosita",
+    "titolo": "Meteo spaziale e aurore live",
+    "descrizione": "Attività solare e previsioni di aurora boreale in tempo reale.",
+    "tags": [
+      "spazio",
+      "cielo",
+      "scienza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://www.spaceweatherlive.com/"
+  },
+  {
+    "id": "volcano-discovery",
+    "tipo": "curiosita",
+    "titolo": "Vulcani live nel mondo",
+    "descrizione": "Attività vulcanica mondiale su mappa aggiornata.",
+    "tags": [
+      "natura",
+      "mappa",
+      "scienza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://www.volcanodiscovery.com/"
+  },
+  {
+    "id": "shodan",
+    "tipo": "curiosita",
+    "titolo": "Shodan — il Google degli oggetti",
+    "descrizione": "Motore di ricerca dei dispositivi connessi con mappa live (funzioni pro con account).",
+    "tags": [
+      "tech",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://www.shodan.io/"
+  },
+  {
+    "id": "greynoise",
+    "tipo": "curiosita",
+    "titolo": "GreyNoise — il rumore di internet",
+    "descrizione": "Scansioni e traffico automatizzato globale visualizzati in tempo reale.",
+    "tags": [
+      "tech",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://viz.greynoise.io/"
+  },
+  {
+    "id": "town-of-salem",
+    "tipo": "gioco",
+    "titolo": "Town of Salem — mafia game",
+    "descrizione": "Deduzione sociale 7-15 giocatori: browser, Discord e Steam (versione completa a pagamento).",
+    "tags": [
+      "multiplayer",
+      "codice-stanza",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 7,
+      "max": 15
+    },
+    "durataMin": 20,
+    "linkEsterno": "https://www.townofsalem.io/"
+  },
+  {
+    "id": "itchio-multiplayer",
+    "tipo": "gioco",
+    "titolo": "itch.io — indie multiplayer",
+    "descrizione": "Giochi indie multiplayer da browser: miniera di idee per LosTime.",
+    "tags": [
+      "single",
+      "multiplayer",
+      "no-account",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 8
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://itch.io/games/tag-multiplayer"
   }
 ]
