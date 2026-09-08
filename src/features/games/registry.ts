@@ -1,4 +1,4 @@
-export type GameId = 'solitario' | 'tris' | 'scacchi' | 'quiz' | 'v2048' | 'sudoku' | 'minato';
+export type GameId = 'solitario' | 'tris' | 'scacchi' | 'quiz' | 'v2048' | 'sudoku' | 'minato' | 'wordle';
 
 export type GameMeta = {
   titolo: string;
@@ -20,6 +20,7 @@ export const GAMES: Record<GameId, { titolo: string; maxPlayers: number; minPlay
   v2048: { titolo: '2048', maxPlayers: 1, minPlayers: 1, durataMin: 5 },
   sudoku: { titolo: 'Sudoku', maxPlayers: 1, minPlayers: 1, durataMin: 10 },
   minato: { titolo: 'Campo Minato', maxPlayers: 1, minPlayers: 1, durataMin: 5 },
+  wordle: { titolo: 'Parola del giorno', maxPlayers: 1, minPlayers: 1, durataMin: 4 },
 };
 
 /** Registry esteso per Home / Hub / ricerca — collegato a content.json. */
@@ -65,6 +66,12 @@ export const GAME_REGISTRY: Record<GameId, GameMeta> = {
     tags: ['single', 'classico', 'no-account', 'mobile', 'italiano', '5-min'],
     copertina: '/covers/mines.png', rotta: '/giochi/minato',
     descrizione: 'Campo Minato gratis con 3 livelli, senza account. Giocabile offline.',
+  },
+  wordle: {
+    titolo: 'Parola del giorno', minPlayers: 1, maxPlayers: 1, durataMin: 4,
+    tags: ['single', 'parole', 'no-account', 'mobile', 'italiano', '5-min'],
+    copertina: '/covers/wordle.png', rotta: '/giochi/wordle',
+    descrizione: 'Indovina la parola italiana in 6 tentativi. Gratis, senza account, offline.',
   },
 };
 

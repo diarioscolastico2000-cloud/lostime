@@ -334,6 +334,7 @@
   {
     "id": "wordle-it",
     "tipo": "gioco",
+    "gameId": "wordle",
     "titolo": "Parola del giorno (Wordle IT)",
     "descrizione": "Indovina la parola italiana in 6 tentativi. Gratis, senza account.",
     "tags": [
@@ -342,7 +343,6 @@
       "no-account",
       "mobile",
       "italiano",
-      "link-esterno",
       "5-min"
     ],
     "players": {
@@ -351,7 +351,7 @@
     },
     "durataMin": 4,
     "cover": "/covers/wordle.png",
-    "linkEsterno": "https://pietroppeter.github.io/wordle-it/"
+    "rottaInterna": "/giochi/wordle"
   },
   {
     "id": "cielo-lostime",
