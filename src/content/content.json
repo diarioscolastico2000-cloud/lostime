@@ -269,6 +269,7 @@
   {
     "id": "minesweeper",
     "tipo": "gioco",
+    "gameId": "minato",
     "titolo": "Campo Minato",
     "descrizione": "Campo Minato gratis con livelli e daily challenge, senza account.",
     "tags": [
@@ -277,7 +278,6 @@
       "no-account",
       "mobile",
       "italiano",
-      "link-esterno",
       "5-min"
     ],
     "players": {
@@ -286,20 +286,20 @@
     },
     "durataMin": 5,
     "cover": "/covers/mines.png",
-    "linkEsterno": "https://minesweeper.online"
+    "rottaInterna": "/giochi/minato"
   },
   {
     "id": "sudoku",
     "tipo": "gioco",
-    "titolo": "Sudoku giornaliero",
-    "descrizione": "Sudoku con livelli facile→esperto e sfida del giorno, senza account.",
+    "gameId": "sudoku",
+    "titolo": "Sudoku",
+    "descrizione": "Sudoku offline con 3 livelli, note matita, hint e best tempi. Senza account.",
     "tags": [
       "single",
       "classico",
       "no-account",
       "mobile",
       "italiano",
-      "link-esterno",
       "15-min"
     ],
     "players": {
@@ -308,7 +308,7 @@
     },
     "durataMin": 10,
     "cover": "/covers/sudoku.png",
-    "linkEsterno": "https://sudoku.com"
+    "rottaInterna": "/giochi/sudoku"
   },
   {
     "id": "dino",

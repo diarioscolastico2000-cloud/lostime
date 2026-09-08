@@ -1,4 +1,4 @@
-export type GameId = 'solitario' | 'tris' | 'scacchi' | 'quiz' | 'v2048';
+export type GameId = 'solitario' | 'tris' | 'scacchi' | 'quiz' | 'v2048' | 'sudoku' | 'minato';
 
 export type GameMeta = {
   titolo: string;
@@ -18,6 +18,8 @@ export const GAMES: Record<GameId, { titolo: string; maxPlayers: number; minPlay
   scacchi: { titolo: 'Scacchi', maxPlayers: 2, minPlayers: 2, durataMin: 20 },
   quiz: { titolo: 'Quiz', maxPlayers: 1, minPlayers: 1, durataMin: 5 },
   v2048: { titolo: '2048', maxPlayers: 1, minPlayers: 1, durataMin: 5 },
+  sudoku: { titolo: 'Sudoku', maxPlayers: 1, minPlayers: 1, durataMin: 10 },
+  minato: { titolo: 'Campo Minato', maxPlayers: 1, minPlayers: 1, durataMin: 5 },
 };
 
 /** Registry esteso per Home / Hub / ricerca — collegato a content.json. */
@@ -51,6 +53,18 @@ export const GAME_REGISTRY: Record<GameId, GameMeta> = {
     tags: ['single', 'veloce', 'no-account', 'mobile', 'italiano', '5-min'],
     copertina: '/covers/2048.png', rotta: '/giochi/2048',
     descrizione: 'Unisci i numeri fino a 2048. Single, immediato, senza account, perfetto da mobile.',
+  },
+  sudoku: {
+    titolo: 'Sudoku', minPlayers: 1, maxPlayers: 1, durataMin: 10,
+    tags: ['single', 'classico', 'no-account', 'mobile', 'italiano', '15-min'],
+    copertina: '/covers/sudoku.png', rotta: '/giochi/sudoku',
+    descrizione: 'Riempi la griglia 9x9: 3 livelli, note matita, hint e best tempi. Offline.',
+  },
+  minato: {
+    titolo: 'Campo Minato', minPlayers: 1, maxPlayers: 1, durataMin: 5,
+    tags: ['single', 'classico', 'no-account', 'mobile', 'italiano', '5-min'],
+    copertina: '/covers/mines.png', rotta: '/giochi/minato',
+    descrizione: 'Campo Minato gratis con 3 livelli, senza account. Giocabile offline.',
   },
 };
 
