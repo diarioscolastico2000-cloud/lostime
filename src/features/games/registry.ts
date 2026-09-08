@@ -1,4 +1,4 @@
-export type GameId = 'solitario' | 'tris' | 'scacchi' | 'quiz' | 'v2048' | 'sudoku' | 'minato' | 'wordle';
+export type GameId = 'solitario' | 'tris' | 'scacchi' | 'quiz' | 'v2048' | 'sudoku' | 'minato' | 'wordle' | 'forza4';
 
 export type GameMeta = {
   titolo: string;
@@ -21,6 +21,7 @@ export const GAMES: Record<GameId, { titolo: string; maxPlayers: number; minPlay
   sudoku: { titolo: 'Sudoku', maxPlayers: 1, minPlayers: 1, durataMin: 10 },
   minato: { titolo: 'Campo Minato', maxPlayers: 1, minPlayers: 1, durataMin: 5 },
   wordle: { titolo: 'Parola del giorno', maxPlayers: 1, minPlayers: 1, durataMin: 4 },
+  forza4: { titolo: 'Forza 4', maxPlayers: 2, minPlayers: 2, durataMin: 5 },
 };
 
 /** Registry esteso per Home / Hub / ricerca — collegato a content.json. */
@@ -72,6 +73,12 @@ export const GAME_REGISTRY: Record<GameId, GameMeta> = {
     tags: ['single', 'parole', 'no-account', 'mobile', 'italiano', '5-min'],
     copertina: '/covers/wordle.png', rotta: '/giochi/wordle',
     descrizione: 'Indovina la parola italiana in 6 tentativi. Gratis, senza account, offline.',
+  },
+  forza4: {
+    titolo: 'Forza 4', minPlayers: 2, maxPlayers: 2, durataMin: 5,
+    tags: ['2-giocatori', 'multiplayer', 'codice-stanza', 'no-account', 'mobile', 'italiano', '5-min'],
+    copertina: '', rotta: '/giochi/forza4',
+    descrizione: 'Allinea 4 gettoni in riga, colonna o diagonale. Stanza codice 6 char, Rosso vs Giallo.',
   },
 };
 

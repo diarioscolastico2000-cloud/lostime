@@ -9,6 +9,7 @@ import { CuriosityDetail } from '../features/curiosities/CuriosityDetail';
 import { NotFound } from '../shared/NotFound';
 import { useLocalSessions, recordRoomVisit } from '../features/sessions/useLocalSessions';
 import { TicTacToeBoard } from '../features/games/tictactoe/TicTacToeBoard';
+import { Forza4Board } from '../features/games/forza4/Forza4Board';
 import { Lobby } from '../features/lobby/Lobby';
 
 // Pagine pesanti in lazy: Home resta leggera, il resto si scarica alla visita.
@@ -25,13 +26,18 @@ export function conSuspense(el: React.ReactElement) {
   return <Suspense fallback={<div>Caricamento…</div>}>{el}</Suspense>;
 }
 import { useLobby } from '../features/lobby/useLobby';
+import { useGameState } from '../features/lobby/useGameState';
 import { createLobbyCode } from '../features/lobby/lobbyApi';
 import { GAMES } from '../features/games/registry';
-export const APP_ROUTES = ['/', '/curiosita', '/curiosita/:id', '/cielo', '/giochi', '/giochi/solitario', '/giochi/tris', '/giochi/scacchi', '/giochi/2048', '/giochi/sudoku', '/giochi/minato', '/giochi/wordle', '/giochi/:gameId', '/r/:codice', '/giochi/:gameId/r/:codice', '/giochi/scacchi/r/:codice', '/sessioni'];
+export const APP_ROUTES = ['/', '/curiosita', '/curiosita/:id', '/cielo', '/giochi', '/giochi/solitario', '/giochi/tris', '/giochi/forza4', '/giochi/scacchi', '/giochi/2048', '/giochi/sudoku', '/giochi/minato', '/giochi/wordle', '/giochi/:gameId', '/r/:codice', '/giochi/:gameId/r/:codice', '/giochi/scacchi/r/:codice', '/sessioni'];
 export function getAppRoutes(): string[] { return APP_ROUTES; }
 function TrisPage() {
   const [codice] = useState(() => createLobbyCode());
   return (<div><h2>Tris</h2><TicTacToeBoard /><Lobby codice={codice} gameId="tris" maxPlayers={GAMES.tris.maxPlayers} /></div>);
+}
+function Forza4Page() {
+  const [codice] = useState(() => createLobbyCode());
+  return (<div><h2>Forza 4</h2><Forza4Board /><Lobby codice={codice} gameId="forza4" maxPlayers={GAMES.forza4.maxPlayers} /></div>);
 }
 function ChessPage() {
   const [codice] = useState(() => createLobbyCode());
@@ -186,6 +192,7 @@ function SessionsPage() {
 function RoomPage() {
   const { codice = '' } = useParams();
   const { lobby, stato } = useLobby(codice);
+  const { payload, inviaMossa } = useGameState(codice);
   const gameId = lobby?.gameId ?? 'tris';
   const maxPlayers = lobby?.maxPlayers ?? GAMES.tris.maxPlayers;
   useEffect(() => {
@@ -202,16 +209,17 @@ function RoomPage() {
     );
   }
   if (stato === 'offline') return (<div>📡 Offline — riconnessione… lo stato arriverà alla ripresa.</div>);
-  return (<div><Lobby codice={codice} gameId={gameId} maxPlayers={maxPlayers} />{gameId === 'tris' && <TicTacToeBoard />}{gameId === 'scacchi' && <ChessBoard />}</div>);
+  return (<div><Lobby codice={codice} gameId={gameId} maxPlayers={maxPlayers} />{gameId === 'tris' && <TicTacToeBoard board={payload.board} onMove={(i)=>inviaMossa(i)} />}{gameId === 'forza4' && <Forza4Board />}{gameId === 'scacchi' && <ChessBoard />}</div>);
 }
 function GameRoomPage() {
   const { gameId = 'tris', codice = '' } = useParams();
+  const { payload, inviaMossa } = useGameState(codice);
   const maxPlayers = (gameId in GAMES ? GAMES[gameId as keyof typeof GAMES].maxPlayers : 2) as number;
   useEffect(() => {
     if (codice) recordRoomVisit(codice, gameId);
   }, [codice, gameId]);
   if (!codice) return (<div>Codice stanza mancante</div>);
-  return (<div><Lobby codice={codice} gameId={gameId} maxPlayers={maxPlayers} />{gameId === 'tris' ? <TicTacToeBoard /> : gameId === 'scacchi' ? <ChessBoard /> : <p>Stanza {gameId} - lobby generica</p>}</div>);
+  return (<div><Lobby codice={codice} gameId={gameId} maxPlayers={maxPlayers} />{gameId === 'tris' ? <TicTacToeBoard board={payload.board} onMove={(i)=>inviaMossa(i)} /> : gameId === 'forza4' ? <Forza4Board /> : gameId === 'scacchi' ? <ChessBoard /> : <p>Stanza {gameId} - lobby generica</p>}</div>);
 }
 export const router = createBrowserRouter([
   { path: '/', element: <Layout />, children: [
@@ -223,6 +231,7 @@ export const router = createBrowserRouter([
     { path: 'giochi/quiz', element: conSuspense(<QuizPlayer />) },
     { path: 'giochi/solitario', element: conSuspense(<SolitaireBoard />) },
     { path: 'giochi/tris', element: <TrisPage /> },
+    { path: 'giochi/forza4', element: <Forza4Page /> },
     { path: 'giochi/scacchi', element: conSuspense(<ChessPage />) },
     { path: 'giochi/2048', element: conSuspense(<Game2048 />) },
     { path: 'giochi/minato', element: conSuspense(<MinesBoard />) },

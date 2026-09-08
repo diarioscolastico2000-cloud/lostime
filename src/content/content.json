@@ -47,6 +47,28 @@
     "rottaInterna": "/giochi/tris"
   },
   {
+    "id": "forza4",
+    "tipo": "gioco",
+    "gameId": "forza4",
+    "titolo": "Forza 4",
+    "descrizione": "Allinea 4 gettoni in riga, colonna o diagonale. Crea una stanza con codice a 6 caratteri e sfida un amico senza account: Rosso contro Giallo.",
+    "tags": [
+      "2-giocatori",
+      "multiplayer",
+      "codice-stanza",
+      "no-account",
+      "mobile",
+      "italiano",
+      "5-min"
+    ],
+    "players": {
+      "min": 2,
+      "max": 2
+    },
+    "durataMin": 5,
+    "rottaInterna": "/giochi/forza4"
+  },
+  {
     "id": "scacchi",
     "tipo": "gioco",
     "gameId": "scacchi",
@@ -1329,5 +1351,101 @@
     "durataMin": 2,
     "cover": "/covers/useless.png",
     "linkEsterno": "https://theuselessweb.com"
+  },
+  {
+    "id": "kaspersky-cybermap",
+    "tipo": "curiosita",
+    "titolo": "Mappa Cyberattacchi live (Kaspersky)",
+    "descrizione": "Attacchi informatici rilevati nel mondo in tempo reale, anche in italiano.",
+    "tags": [
+      "tech",
+      "mappa",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://cybermap.kaspersky.com/"
+  },
+  {
+    "id": "usgs-terremoti-mondo",
+    "tipo": "curiosita",
+    "titolo": "Terremoti mondo live (USGS)",
+    "descrizione": "Terremoti rilevati in tutto il mondo in tempo reale con mappa e magnitudo.",
+    "tags": [
+      "scienza",
+      "natura",
+      "mappa",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://earthquake.usgs.gov/earthquakes/map/"
+  },
+  {
+    "id": "worldometers",
+    "tipo": "curiosita",
+    "titolo": "Worldometers — contatori live",
+    "descrizione": "Popolazione, energia, ambiente: numeri del mondo che scorrono in diretta.",
+    "tags": [
+      "scienza",
+      "no-account",
+      "mobile",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://www.worldometers.info/"
+  },
+  {
+    "id": "fishing-watch",
+    "tipo": "curiosita",
+    "titolo": "Pesca mondiale live",
+    "descrizione": "Dove stanno pescando le flotte nel mondo, rilevato via satellite.",
+    "tags": [
+      "mare",
+      "natura",
+      "mappa",
+      "scienza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://globalfishingwatch.org/map/"
+  },
+  {
+    "id": "stuff-in-space",
+    "tipo": "curiosita",
+    "titolo": "Stuff in Space — satelliti 3D",
+    "descrizione": "Satelliti e detriti orbitali in 3D interattivo.",
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://stuffin.space/"
   }
 ]
