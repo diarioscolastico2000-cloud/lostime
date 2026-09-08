@@ -1583,5 +1583,206 @@
     },
     "durataMin": 10,
     "linkEsterno": "https://littlealchemy2.com/"
+  },
+  {
+    "id": "nasa-eyes",
+    "tipo": "curiosita",
+    "titolo": "NASA Eyes — sistema solare 3D",
+    "descrizione": "Sistema solare in 3D con posizioni live di sonde e satelliti NASA.",
+    "tags": [
+      "spazio",
+      "scienza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://eyes.nasa.gov/"
+  },
+  {
+    "id": "cloudflare-radar",
+    "tipo": "curiosita",
+    "titolo": "Cloudflare Radar — internet live",
+    "descrizione": "Traffico internet mondiale, attacchi DDoS e stato rete per paese.",
+    "tags": [
+      "tech",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://radar.cloudflare.com/"
+  },
+  {
+    "id": "safecast",
+    "tipo": "curiosita",
+    "titolo": "Safecast — radiazioni live",
+    "descrizione": "Livelli di radiazione nel mondo da sensori dei cittadini.",
+    "tags": [
+      "scienza",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://map.safecast.org/"
+  },
+  {
+    "id": "downdetector",
+    "tipo": "curiosita",
+    "titolo": "Downdetector — cosa non funziona",
+    "descrizione": "Disservizi di app e siti segnalati dagli utenti in tempo reale.",
+    "tags": [
+      "tech",
+      "no-account",
+      "mobile",
+      "italiano",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 2,
+    "linkEsterno": "https://downdetector.com/"
+  },
+  {
+    "id": "listen-wiki",
+    "tipo": "curiosita",
+    "titolo": "Ascolta Wikipedia",
+    "descrizione": "Le modifiche a Wikipedia diventano suoni e bolle animate.",
+    "tags": [
+      "musica",
+      "tech",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://listen.hatnote.com/"
+  },
+  {
+    "id": "boardgame-arena",
+    "tipo": "gioco",
+    "titolo": "Board Game Arena",
+    "descrizione": "Centinaia di giochi da tavolo online in lobby (alcuni gratis).",
+    "tags": [
+      "multiplayer",
+      "codice-stanza",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 2,
+      "max": 6
+    },
+    "durataMin": 15,
+    "linkEsterno": "https://boardgamearena.com/"
+  },
+  {
+    "id": "cardgames-io",
+    "tipo": "gioco",
+    "titolo": "CardGames.io — carte nel browser",
+    "descrizione": "Solitario e giochi di carte nel browser, anche multiplayer.",
+    "tags": [
+      "carte",
+      "single",
+      "multiplayer",
+      "no-account",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 4
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://cardgames.io/"
+  },
+  {
+    "id": "diep-io",
+    "tipo": "gioco",
+    "titolo": "Diep.io — carri armati .io",
+    "descrizione": "Multiplayer .io con carri armati in tempo reale.",
+    "tags": [
+      "multiplayer",
+      "veloce",
+      "no-account",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://diep.io/"
+  },
+  {
+    "id": "codenames-online",
+    "tipo": "gioco",
+    "titolo": "Codenames Online — parole a squadre",
+    "descrizione": "Gioco di parole a due squadre con stanze private.",
+    "tags": [
+      "multiplayer",
+      "parole",
+      "codice-stanza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 4,
+      "max": 8
+    },
+    "durataMin": 15,
+    "linkEsterno": "https://codenames.game/"
+  },
+  {
+    "id": "jackbox",
+    "tipo": "gioco",
+    "titolo": "Jackbox — party con codice",
+    "descrizione": "Party game: ci si unisce dal telefono con un codice (serve un gioco acquistato per ospitare).",
+    "tags": [
+      "multiplayer",
+      "codice-stanza",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 3,
+      "max": 8
+    },
+    "durataMin": 20,
+    "linkEsterno": "https://jackbox.tv/"
+  },
+  {
+    "id": "kahoot",
+    "tipo": "gioco",
+    "titolo": "Kahoot — quiz live con codice",
+    "descrizione": "Quiz dal vivo con codice stanza (serve account per ospitare).",
+    "tags": [
+      "quiz",
+      "multiplayer",
+      "codice-stanza",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 2,
+      "max": 20
+    },
+    "durataMin": 10,
+    "linkEsterno": "https://kahoot.com/"
   }
 ]
