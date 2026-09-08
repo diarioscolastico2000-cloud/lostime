@@ -203,6 +203,7 @@
   {
     "id": "2048",
     "tipo": "gioco",
+    "gameId": "v2048",
     "titolo": "2048",
     "descrizione": "Unisci i numeri fino a 2048. Single, immediato, senza account, perfetto da mobile.",
     "tags": [
@@ -210,7 +211,7 @@
       "veloce",
       "no-account",
       "mobile",
-      "link-esterno",
+      "italiano",
       "5-min"
     ],
     "players": {
@@ -219,7 +220,7 @@
     },
     "durataMin": 5,
     "cover": "/covers/2048.png",
-    "linkEsterno": "https://play2048.co"
+    "rottaInterna": "/giochi/2048"
   },
   {
     "id": "tetrio",

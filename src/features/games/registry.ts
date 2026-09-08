@@ -1,4 +1,4 @@
-export type GameId = 'solitario' | 'tris' | 'scacchi' | 'quiz';
+export type GameId = 'solitario' | 'tris' | 'scacchi' | 'quiz' | 'v2048';
 
 export type GameMeta = {
   titolo: string;
@@ -17,6 +17,7 @@ export const GAMES: Record<GameId, { titolo: string; maxPlayers: number; minPlay
   tris: { titolo: 'Tris', maxPlayers: 2, minPlayers: 2, durataMin: 3 },
   scacchi: { titolo: 'Scacchi', maxPlayers: 2, minPlayers: 2, durataMin: 20 },
   quiz: { titolo: 'Quiz', maxPlayers: 1, minPlayers: 1, durataMin: 5 },
+  v2048: { titolo: '2048', maxPlayers: 1, minPlayers: 1, durataMin: 5 },
 };
 
 /** Registry esteso per Home / Hub / ricerca — collegato a content.json. */
@@ -44,6 +45,12 @@ export const GAME_REGISTRY: Record<GameId, GameMeta> = {
     tags: ['single', 'quiz', 'no-account', 'mobile', 'italiano', '5-min'],
     copertina: '/covers/quiz.png', rotta: '/giochi/quiz',
     descrizione: 'Domande IT a risposta multipla con spiegazione e punteggio.',
+  },
+  v2048: {
+    titolo: '2048', minPlayers: 1, maxPlayers: 1, durataMin: 5,
+    tags: ['single', 'veloce', 'no-account', 'mobile', 'italiano', '5-min'],
+    copertina: '/covers/2048.png', rotta: '/giochi/2048',
+    descrizione: 'Unisci i numeri fino a 2048. Single, immediato, senza account, perfetto da mobile.',
   },
 };
 

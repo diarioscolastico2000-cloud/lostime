@@ -1,5 +1,7 @@
 import quiz from './quiz.json';
 
+export type Difficolta = 'facile' | 'media' | 'difficile';
+
 export type QuizQuestion = {
   id: string;
   domanda: string;
@@ -7,11 +9,22 @@ export type QuizQuestion = {
   /** campo storico */ corretta: number;
   /** alias nuovo formato docs */ correttaIndex?: number;
   spiegazione: string;
+  categoria: string;
+  difficolta: Difficolta | string;
 };
+
+/** Secondi per rispondere a ogni domanda (usato dal QuizPlayer). */
+export const QUESTION_TIME_SECONDS = 20;
 
 function normalize(q: QuizQuestion): QuizQuestion {
   const corretta = q.corretta ?? q.correttaIndex ?? 0;
-  return { ...q, corretta, correttaIndex: q.correttaIndex ?? corretta };
+  return {
+    ...q,
+    corretta,
+    correttaIndex: q.correttaIndex ?? corretta,
+    categoria: q.categoria ?? 'scienza',
+    difficolta: (q.difficolta as Difficolta) ?? 'facile',
+  };
 }
 
 export function getQuestions(): QuizQuestion[] {
@@ -48,4 +61,27 @@ export function scoreAnswers(risposte: Record<string, number>): { punti: number;
     if (risposte[q.id] === q.corretta) punti += 1;
   }
   return { punti, totali: qs.length };
+}
+
+export function getCategories(): string[] {
+  const seen = new Set<string>();
+  for (const q of getQuestions()) {
+    if (q.categoria) seen.add(q.categoria);
+  }
+  return [...seen];
+}
+
+export function getQuestionsByCategory(cat: string): QuizQuestion[] {
+  if (!cat || cat === 'tutte' || cat === 'all') return getQuestions();
+  return getQuestions().filter((q) => q.categoria === cat);
+}
+
+/** True quando il tempo è scaduto (elapsed >= limit). Helper testabile per il timer. */
+export function isTimeout(elapsedSeconds: number, limitSeconds: number = QUESTION_TIME_SECONDS): boolean {
+  return elapsedSeconds >= limitSeconds;
+}
+
+/** Bonus streak: +1 ogni 3 risposte giuste di fila. */
+export function streakBonus(streak: number): number {
+  return streak > 0 && streak % 3 === 0 ? 1 : 0;
 }

@@ -16,6 +16,7 @@ const CieloMap = lazy(() => import('../features/cielo/CieloMap').then((m) => ({ 
 const ChessBoard = lazy(() => import('../features/games/chess/ChessBoard').then((m) => ({ default: m.ChessBoard })));
 const QuizPlayer = lazy(() => import('../features/quiz/QuizPlayer').then((m) => ({ default: m.QuizPlayer })));
 const SolitaireBoard = lazy(() => import('../features/games/solitaire/SolitaireBoard').then((m) => ({ default: m.SolitaireBoard })));
+const Game2048 = lazy(() => import('../features/games/v2048/Game2048').then((m) => ({ default: m.Game2048 })));
 
 export function conSuspense(el: React.ReactElement) {
   return <Suspense fallback={<div>Caricamento…</div>}>{el}</Suspense>;
@@ -23,7 +24,7 @@ export function conSuspense(el: React.ReactElement) {
 import { useLobby } from '../features/lobby/useLobby';
 import { createLobbyCode } from '../features/lobby/lobbyApi';
 import { GAMES } from '../features/games/registry';
-export const APP_ROUTES = ['/', '/curiosita', '/curiosita/:id', '/cielo', '/giochi', '/giochi/solitario', '/giochi/tris', '/giochi/scacchi', '/giochi/:gameId', '/r/:codice', '/giochi/:gameId/r/:codice', '/giochi/scacchi/r/:codice', '/sessioni'];
+export const APP_ROUTES = ['/', '/curiosita', '/curiosita/:id', '/cielo', '/giochi', '/giochi/solitario', '/giochi/tris', '/giochi/scacchi', '/giochi/2048', '/giochi/:gameId', '/r/:codice', '/giochi/:gameId/r/:codice', '/giochi/scacchi/r/:codice', '/sessioni'];
 export function getAppRoutes(): string[] { return APP_ROUTES; }
 function TrisPage() {
   const [codice] = useState(() => createLobbyCode());
@@ -220,6 +221,7 @@ export const router = createBrowserRouter([
     { path: 'giochi/solitario', element: conSuspense(<SolitaireBoard />) },
     { path: 'giochi/tris', element: <TrisPage /> },
     { path: 'giochi/scacchi', element: conSuspense(<ChessPage />) },
+    { path: 'giochi/2048', element: conSuspense(<Game2048 />) },
     { path: 'giochi/:gameId', element: <div>Gioco</div> },
     { path: 'r/:codice', element: conSuspense(<RoomPage />) },
     { path: 'giochi/:gameId/r/:codice', element: conSuspense(<GameRoomPage />) },
