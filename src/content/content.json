@@ -1913,5 +1913,173 @@
     },
     "durataMin": 5,
     "linkEsterno": "https://itch.io/games/tag-multiplayer"
+  },
+  {
+    "id": "adsb-exchange",
+    "tipo": "curiosita",
+    "titolo": "ADS-B Exchange — voli senza filtri",
+    "descrizione": "Voli in tempo reale da dati aperti, anche militari: alternativa a Flightradar.",
+    "tags": [
+      "cielo",
+      "mappa",
+      "tech",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://globe.adsbexchange.com/"
+  },
+  {
+    "id": "climate-reanalyzer",
+    "tipo": "curiosita",
+    "titolo": "Clima — anomalie live",
+    "descrizione": "Mappe giornaliere delle anomalie di temperatura globale.",
+    "tags": [
+      "natura",
+      "mappa",
+      "scienza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://climatereanalyzer.org/"
+  },
+  {
+    "id": "earth-timelapse",
+    "tipo": "curiosita",
+    "titolo": "Terra 1984-oggi — timelapse",
+    "descrizione": "Come è cambiata la Terra dal satellite, zoomabile.",
+    "tags": [
+      "natura",
+      "geografia",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://earthengine.google.com/timelapse/"
+  },
+  {
+    "id": "ancient-earth",
+    "tipo": "curiosita",
+    "titolo": "Terra antica — dove eri 200M anni fa",
+    "descrizione": "Il tuo punto sulla Terra centinaia di milioni di anni fa.",
+    "tags": [
+      "storia",
+      "scienza",
+      "natura",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://dinosaurpictures.org/ancient-earth"
+  },
+  {
+    "id": "thisperson",
+    "tipo": "curiosita",
+    "titolo": "Volto inventato dall'IA",
+    "descrizione": "Un volto realistico ma inesistente a ogni ricarica.",
+    "tags": [
+      "tech",
+      "veloce",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 2,
+    "linkEsterno": "https://thispersondoesnotexist.com/"
+  },
+  {
+    "id": "ooni",
+    "tipo": "curiosita",
+    "titolo": "OONI — censura internet live",
+    "descrizione": "Dove e come viene censurata internet nel mondo.",
+    "tags": [
+      "tech",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://explorer.ooni.org/"
+  },
+  {
+    "id": "netblocks",
+    "tipo": "curiosita",
+    "titolo": "NetBlocks — blackout internet",
+    "descrizione": "Blackout e restrizioni di rete tracciati in tempo reale.",
+    "tags": [
+      "tech",
+      "mappa",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 1,
+      "max": 1
+    },
+    "durataMin": 3,
+    "linkEsterno": "https://netblocks.org/"
+  },
+  {
+    "id": "jklm",
+    "tipo": "gioco",
+    "titolo": "JKLM.fun — party Bomb Party",
+    "descrizione": "Party game di parole gratis con stanze pubbliche o con codice.",
+    "tags": [
+      "multiplayer",
+      "parole",
+      "codice-stanza",
+      "no-account",
+      "link-esterno"
+    ],
+    "players": {
+      "min": 2,
+      "max": 8
+    },
+    "durataMin": 10,
+    "linkEsterno": "https://jklm.fun/"
+  },
+  {
+    "id": "krunker",
+    "tipo": "gioco",
+    "titolo": "Krunker.io — sparatutto browser",
+    "descrizione": "FPS multiplayer nel browser, senza download.",
+    "tags": [
+      "multiplayer",
+      "veloce",
+      "no-account",
+      "link-esterno",
+      "5-min"
+    ],
+    "players": {
+      "min": 1,
+      "max": 8
+    },
+    "durataMin": 5,
+    "linkEsterno": "https://krunker.io/"
   }
 ]
