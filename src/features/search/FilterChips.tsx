@@ -31,19 +31,16 @@ export function FilterChips({
 }) {
   const list = tags ?? FILTER_TAGS;
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }} role="group" aria-label="filtri">
+    <div className="lt-quick-filters" role="group" aria-label="filtri">
       {list.map((t) => {
         const on = active.includes(t);
         return (
           <button
             key={t}
+            type="button"
             onClick={() => onToggle(t)}
             aria-pressed={on}
-            style={{
-              minHeight: 40, borderRadius: 999, padding: '8px 14px',
-              background: on ? '#FFD23F' : '#1e1e2a', color: on ? '#1a1a1a' : '#fff',
-              border: '1px solid #333', fontWeight: on ? 700 : 400,
-            }}
+            className="lt-chip"
           >
             {t}
           </button>

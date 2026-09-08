@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-/** Banner offline: mosse in pausa fino a riconnessione (spec error handling). */
+/** Banner offline discreto: una riga sottile, solo quando serve. */
 export function OnlineBanner() {
   const [online, setOnline] = useState(() =>
     typeof navigator !== 'undefined' ? navigator.onLine : true,
@@ -19,10 +19,7 @@ export function OnlineBanner() {
 
   if (online) return null;
   return (
-    <div
-      role="alert"
-      style={{ background: '#c62828', color: '#fff', padding: '10px 16px', textAlign: 'center', fontWeight: 700 }}
-    >
+    <div className="lt-offline" role="alert">
       📡 Sei offline — riconnessione in corso, le mosse sono in pausa.
     </div>
   );

@@ -38,36 +38,67 @@ function ChessRoomPage() {
   if (!codice) return (<div>Codice stanza mancante</div>);
   return (<div><Lobby codice={codice} gameId="scacchi" maxPlayers={GAMES.scacchi.maxPlayers} /><ChessBoard /></div>);
 }
-const gridStyle = {
-  display: 'grid', gap: 12,
-  gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
-} as const;
 
 function HomePage() {
   const s = getHomeSections();
   return (
-    <div style={{ display: 'grid', gap: 24 }}>
-      <section>
-        <h1>Perdi tempo bene</h1>
-        <p>Curiosità, giochi e quiz gratis, senza account.</p>
-        <SearchBar />
+    <div>
+      <section className="lt-hero" aria-labelledby="home-titolo">
+        <span className="lt-hero-kicker">Gratis • Senza account</span>
+        <h1 id="home-titolo">Perdi tempo bene</h1>
+        <p className="lt-hero-sub">
+          Curiosità, giochi e quiz gratis, senza account. Da 2 minuti sul divano
+          o da 20 con un amico: scegli e parti.
+        </p>
+        <div className="lt-search-prominent">
+          <SearchBar />
+        </div>
+        <div className="lt-hero-points" aria-label="perché LosTime">
+          <span className="lt-pill">⚡ Partite da 2–5 min</span>
+          <span className="lt-pill">👥 Sfide con codice stanza</span>
+          <span className="lt-pill">📵 Funziona anche offline*</span>
+        </div>
       </section>
-      <section>
-        <h2>Giochi in 2</h2>
-        <div style={gridStyle}>{s.giochiDue.map((c) => <ContentCard key={c.id} item={c} />)}</div>
+
+      <section className="lt-section" aria-labelledby="h-due">
+        <div className="lt-section-head">
+          <h2 id="h-due">Giochi in 2</h2>
+          <p>X contro O, matto in 20 minuti, o un disegno a catena.</p>
+          <Link className="lt-section-link" to="/giochi">
+            Tutti i giochi →
+          </Link>
+        </div>
+        <div className="lt-grid">{s.giochiDue.map((c) => <ContentCard key={c.id} item={c} />)}</div>
       </section>
-      <section>
-        <h2>5 minuti</h2>
-        <div style={gridStyle}>{s.veloci.map((c) => <ContentCard key={c.id} item={c} />)}</div>
+
+      <section className="lt-section" aria-labelledby="h-veloci">
+        <div className="lt-section-head">
+          <h2 id="h-veloci">5 minuti</h2>
+          <p>Pausa caffè? Un quiz, un dino, un cerchio perfetto.</p>
+        </div>
+        <div className="lt-grid">{s.veloci.map((c) => <ContentCard key={c.id} item={c} />)}</div>
       </section>
-      <section>
-        <h2>Esplora live</h2>
-        <div style={gridStyle}>{s.esplora.map((c) => <ContentCard key={c.id} item={c} />)}</div>
+
+      <section className="lt-section" aria-labelledby="h-live">
+        <div className="lt-section-head">
+          <h2 id="h-live">Esplora live</h2>
+          <p>Aerei, navi, fulmini e spazio: il mondo in tempo reale.</p>
+          <Link className="lt-section-link" to="/cielo">
+            Apri il cielo →
+          </Link>
+        </div>
+        <div className="lt-grid">{s.esplora.map((c) => <ContentCard key={c.id} item={c} />)}</div>
       </section>
-      <section>
-        <h2>Curiosità</h2>
+
+      <section className="lt-section" aria-labelledby="h-cur">
+        <div className="lt-section-head">
+          <h2 id="h-cur">Curiosità</h2>
+          <p>Il miele eterno, i polpi blu, Saturno che galleggia.</p>
+          <Link className="lt-section-link" to="/curiosita">
+            Vedi tutte le curiosità →
+          </Link>
+        </div>
         <CuriosityGrid items={s.curiosita} />
-        <p><Link to="/curiosita">Vedi tutte le curiosità</Link></p>
       </section>
     </div>
   );
@@ -76,15 +107,26 @@ function HomePage() {
 function GiochiHubPage() {
   const { interni, esterni } = getGiochiHub();
   return (
-    <div style={{ display: 'grid', gap: 24 }}>
-      <h1>Giochi</h1>
-      <section>
-        <h2>I tuoi giochi</h2>
-        <div style={gridStyle}>{interni.map((c) => <ContentCard key={c.id} item={c} />)}</div>
+    <div>
+      <div className="lt-page-head">
+        <h1>Giochi</h1>
+        <p>
+          {interni.length} giochi tuoi + {esterni.length} esterni gratis, tutti senza account.
+          Le stanze a codice si ritrovano in Sessioni.
+        </p>
+      </div>
+      <section className="lt-section" aria-labelledby="g-interni">
+        <div className="lt-section-head">
+          <h2 id="g-interni">I tuoi giochi</h2>
+        </div>
+        <div className="lt-grid">{interni.map((c) => <ContentCard key={c.id} item={c} />)}</div>
       </section>
-      <section>
-        <h2>Giochi esterni gratis</h2>
-        <div style={gridStyle}>{esterni.map((c) => <ContentCard key={c.id} item={c} />)}</div>
+      <section className="lt-section" aria-labelledby="g-esterni">
+        <div className="lt-section-head">
+          <h2 id="g-esterni">Giochi esterni gratis</h2>
+          <p>Si aprono in una nuova scheda, niente account richiesto.</p>
+        </div>
+        <div className="lt-grid">{esterni.map((c) => <ContentCard key={c.id} item={c} />)}</div>
       </section>
     </div>
   );
@@ -99,27 +141,40 @@ function SessionsPage() {
   const { sessions, clear } = useLocalSessions();
   if (sessions.length === 0) {
     return (
-      <div style={{ display: 'grid', gap: 12 }}>
-        <h1>Sessioni</h1>
-        <p>Nessuna stanza recente. Crea una lobby e torna qui per ritrovarla.</p>
-        <p><Link to="/giochi">Vai ai giochi</Link></p>
+      <div>
+        <div className="lt-page-head">
+          <h1>Sessioni</h1>
+          <p>Nessuna stanza recente. Crea una lobby e torna qui per ritrovarla.</p>
+        </div>
+        <p>
+          <Link className="lt-btn" to="/giochi">
+            Vai ai giochi
+          </Link>
+        </p>
       </div>
     );
   }
   return (
-    <div style={{ display: 'grid', gap: 12 }}>
-      <h1>Sessioni recenti</h1>
-      <ul style={{ display: 'grid', gap: 8, padding: 0, listStyle: 'none' }}>
+    <div>
+      <div className="lt-page-head">
+        <h1>Sessioni recenti</h1>
+        <p>Le tue ultime stanze su questo dispositivo. Tocca per rientrare.</p>
+      </div>
+      <ul className="lt-list">
         {sessions.map((s) => (
-          <li key={s.codice} style={{ borderRadius: 12, padding: 12, background: '#1e1e2a' }}>
+          <li key={s.codice} className="lt-list-item">
             <Link to={`/giochi/${s.gameId}/r/${s.codice}`}>{s.gameId} — {s.codice}</Link>
-            <div style={{ opacity: 0.7, fontSize: 14 }}>
+            <small className="lt-meta">
               {s.nickname ? `come ${s.nickname} • ` : ''}{new Date(s.ultimoAccesso).toLocaleString('it-IT')}
-            </div>
+            </small>
           </li>
         ))}
       </ul>
-      <div><button style={{ minHeight: 44, borderRadius: 12 }} onClick={clear}>Cancella storico</button></div>
+      <div style={{ marginTop: 12 }}>
+        <button className="lt-btn-secondary" onClick={clear}>
+          Cancella storico
+        </button>
+      </div>
     </div>
   );
 }
@@ -157,7 +212,7 @@ function GameRoomPage() {
 export const router = createBrowserRouter([
   { path: '/', element: <Layout />, children: [
     { index: true, element: <HomePage /> },
-    { path: 'curiosita', element: <div style={{ display: 'grid', gap: 16 }}><h1>Curiosità</h1><CuriosityGrid /></div> },
+    { path: 'curiosita', element: <div><div className="lt-page-head"><h1>Curiosità</h1><p>Storie brevi da raccontare a cena: scienza, natura, spazio. Tocca “Scheda” per leggere e passare alla successiva.</p></div><CuriosityGrid /></div> },
     { path: 'curiosita/:id', element: <CuriosityDetailPage /> },
     { path: 'cielo', element: conSuspense(<CieloMap />) },
     { path: 'giochi', element: <GiochiHubPage /> },

@@ -21,15 +21,11 @@ export function getCuriosities(): CuriosityItem[] {
 export function CuriosityGrid({ items }: { items?: CuriosityItem[] }) {
   const list = items ?? getCuriosities();
   return (
-    <div
-      style={{
-        display: 'grid', gap: 12,
-        gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
-      }}
-    >
+    <div className="lt-grid">
       {list.map((c) => (
         <CuriosityCard
           key={c.id}
+          id={c.id}
           titolo={c.titolo}
           testo={c.testo ?? c.descrizione}
           descrizione={c.descrizione}

@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
+
 export type CuriosityCardProps = {
+  id?: string;
   titolo: string;
   /** nuovo formato */ testo?: string;
   /** formato storico */ descrizione?: string;
@@ -7,10 +10,24 @@ export type CuriosityCardProps = {
   /** formato storico */ link?: string;
   tags?: string[];
   categoria?: string;
+  /** link interno alla scheda dettaglio (es. /curiosita/:id) */
+  detailHref?: string;
+};
+
+const EMOJI_PER_CATEGORIA: Record<string, string> = {
+  scienza: '🔬',
+  natura: '🌿',
+  spazio: '🪐',
+  storia: '📜',
+  mappe: '🗺️',
+  cielo: '✈️',
+  mare: '🌊',
+  corpo: '🫀',
+  cibo: '🍯',
 };
 
 /**
- * Card curiosità giocoso-minimale (dark default).
+ * Card curiosità giocoso-minimale (dark default), uniforme a ContentCard.
  * Accetta sia il formato storico {titolo, descrizione, link}
  * sia quello nuovo {titolo, testo, fonteNome, fonteUrl, tags}.
  */
@@ -19,47 +36,46 @@ export function CuriosityCard(props: CuriosityCardProps) {
   const href = props.fonteUrl ?? props.link ?? '#';
   const esterno = href.startsWith('http');
   const tags = props.tags ?? (props.categoria ? [props.categoria] : []);
+  const emoji =
+    EMOJI_PER_CATEGORIA[props.categoria ?? ''] ?? EMOJI_PER_CATEGORIA[tags[0] ?? ''] ?? '✨';
+  const detailHref = props.detailHref ?? (props.id ? `/curiosita/${props.id}` : undefined);
 
   return (
-    <article
-      style={{
-        borderRadius: 16, padding: 16, background: '#1e1e2a', color: '#fff',
-        boxShadow: '0 8px 24px rgba(0,0,0,.35)', display: 'grid', gap: 8,
-      }}
-    >
-      <h3 style={{ margin: 0 }}>{props.titolo}</h3>
-      <p style={{ margin: 0, opacity: 0.9 }}>{testo}</p>
-      {tags.length > 0 && (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-          {tags.map((t) => (
-            <span
-              key={t}
-              style={{ fontSize: 12, borderRadius: 999, padding: '4px 10px', background: '#7C5CFF' }}
-            >
-              {t}
-            </span>
-          ))}
-        </div>
-      )}
-      <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-        <a
-          href={href}
-          target={esterno ? '_blank' : undefined}
-          rel="noreferrer"
-          aria-label={`Apri ${props.titolo}`}
-          style={{
-            minHeight: 40, display: 'inline-flex', alignItems: 'center',
-            borderRadius: 12, padding: '8px 14px', background: '#FFD23F',
-            color: '#1a1a1a', fontWeight: 700, textDecoration: 'none',
-          }}
-        >
-          Apri {esterno ? '↗' : ''}
-        </a>
-        {props.fonteNome && (
-          <small style={{ opacity: 0.7 }}>Fonte: {props.fonteNome}</small>
+    <article className="lt-card">
+      <div className="lt-card-cover-fallback" aria-hidden="true">
+        {emoji}
+      </div>
+      <div className="lt-card-body">
+        <h3 className="lt-card-title">{props.titolo}</h3>
+        <p className="lt-card-desc">{testo}</p>
+        {tags.length > 0 && (
+          <div className="lt-tags" aria-label="tag">
+            {tags.slice(0, 4).map((t) => (
+              <span key={t} className="lt-tag">
+                {t}
+              </span>
+            ))}
+          </div>
         )}
-        {esterno && (
-          <small style={{ opacity: 0.7 }}>esterno • gratis • no account</small>
+        <div className="lt-card-foot">
+          <a
+            href={href}
+            target={esterno ? '_blank' : undefined}
+            rel="noreferrer"
+            aria-label={`Apri ${props.titolo}`}
+            className="lt-btn"
+          >
+            Apri {esterno ? '↗' : ''}
+          </a>
+          {props.fonteNome && <small className="lt-meta">Fonte: {props.fonteNome}</small>}
+          {esterno && <small className="lt-meta">esterno • gratis • no account</small>}
+        </div>
+        {detailHref && (
+          <div>
+            <Link className="lt-btn-ghost" to={detailHref} aria-label={`Scheda di ${props.titolo}`}>
+              Scheda →
+            </Link>
+          </div>
         )}
       </div>
     </article>
